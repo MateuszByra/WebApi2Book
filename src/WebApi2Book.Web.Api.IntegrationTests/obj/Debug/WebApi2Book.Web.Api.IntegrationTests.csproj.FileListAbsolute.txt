@@ -1,0 +1,6 @@
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\bin\Debug\WebApi2Book.Web.Api.IntegrationTests.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\bin\Debug\WebApi2Book.Web.Api.IntegrationTests.pdb
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\obj\Debug\WebApi2Book.Web.Api.IntegrationTests.csprojResolveAssemblyReference.cache
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\obj\Debug\WebApi2Book.Web.Api.IntegrationTests.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api.IntegrationTests\obj\Debug\WebApi2Book.Web.Api.IntegrationTests.pdb

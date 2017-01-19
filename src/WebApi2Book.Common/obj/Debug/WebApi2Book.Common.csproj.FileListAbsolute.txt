@@ -1,0 +1,13 @@
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\WebApi2Book.Common.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\WebApi2Book.Common.pdb
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\AutoMapper.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\log4net.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\AutoMapper.xml
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\log4net.xml
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\obj\Debug\WebApi2Book.Common.csprojResolveAssemblyReference.cache
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\obj\Debug\WebApi2Book.Common.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\obj\Debug\WebApi2Book.Common.pdb
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\System.Web.Http.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\System.Web.Http.xml
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\Ninject.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\Ninject.xml

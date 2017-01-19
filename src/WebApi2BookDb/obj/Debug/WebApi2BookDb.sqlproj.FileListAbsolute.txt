@@ -1,0 +1,5 @@
+E:\Projekty\Moje\WebApi2Book\src\WebApi2BookDb\bin\Debug\WebApi2BookDb.dacpac
+E:\Projekty\Moje\WebApi2Book\src\WebApi2BookDb\bin\Debug\WebApi2BookDb.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2BookDb\bin\Debug\WebApi2BookDb.pdb
+E:\Projekty\Moje\WebApi2Book\src\WebApi2BookDb\obj\Debug\WebApi2BookDb.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2BookDb\obj\Debug\WebApi2BookDb.pdb
