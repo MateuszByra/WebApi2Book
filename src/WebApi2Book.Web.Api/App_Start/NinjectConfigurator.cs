@@ -2,6 +2,7 @@
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
 using NHibernate.Context;
+using NHibernate.Util;
 using Ninject.Activation;
 using Ninject.Web.Common;
 using log4net.Config;
@@ -14,6 +15,11 @@ using WebApi2Book.Common.Web.Security;
 using WebApi2Book.Common.Security;
 using WebApi2BookData.SqlServer.QueryProcessors;
 using WebApi2Book.Data.QueryProcessors;
+using AutoMapper;
+using System.Reflection;
+using System;
+using System.Linq;
+using WebApi2Book.Web.Api.MaintenanceProcessing;
 
 namespace WebApi2Book.Web.Api
 {
@@ -29,8 +35,10 @@ namespace WebApi2Book.Web.Api
             ConfigureLog4net(container);
             ConfigureUserSession(container);
             ConfigureNHibernate(container);
+            ConfigureAutoMapper(container);
             container.Bind<IDateTime>().To<DateTimeAdapter>().InSingletonScope();
             container.Bind<IAddTaskQueryProcessor>().To<AddTaskQueryProcessor>().InRequestScope();
+            container.Bind<IAddTaskMaintenanceProcessor>().To<AddTaskMaintenanceProcessor>().InRequestScope();
         }
 
         private void ConfigureLog4net(IKernel container)
@@ -44,7 +52,7 @@ namespace WebApi2Book.Web.Api
         {
             var sessionFactory = Fluently.Configure()
                 .Database(
-                MsSqlConfiguration.MsSql2008.ConnectionString(
+                MsSqlConfiguration.MsSql2012.ConnectionString(
                     c => c.FromConnectionStringWithKey("WebApi2BookDb")))
                     .CurrentSessionContext("web")
                     .Mappings(m => m.FluentMappings.AddFromAssemblyOf<TaskMap>())
@@ -72,6 +80,22 @@ namespace WebApi2Book.Web.Api
             var userSession = new UserSession();
             container.Bind<IUserSession>().ToConstant(userSession).InSingletonScope();
             container.Bind<IWebUserSession>().ToConstant(userSession).InSingletonScope();
+        }
+
+        private void ConfigureAutoMapper(IKernel container)
+        {
+            var profileType = typeof(Profile);
+            // Get an instance of each Profile in the executing assembly.
+            var profiles = Assembly.GetExecutingAssembly().GetTypes()
+                .Where(t => profileType.IsAssignableFrom(t)
+                && t.GetConstructor(Type.EmptyTypes) != null)
+                .Select(Activator.CreateInstance)
+                .Cast<Profile>();
+
+            // Initialize AutoMapper with each instance of the profiles found.
+            var config = new MapperConfiguration(cfg => profiles.ForEach(cfg.AddProfile));
+            container.Bind<MapperConfiguration>().ToMethod(x => config).InSingletonScope();
+            container.Bind<IMapper>().ToConstant(config.CreateMapper()).InSingletonScope();
         }
     }
 }

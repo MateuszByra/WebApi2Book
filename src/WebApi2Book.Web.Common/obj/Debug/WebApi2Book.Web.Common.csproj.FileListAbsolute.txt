@@ -25,3 +25,5 @@ E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Common\bin\Debug\Newtonsoft.Jso
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Common\bin\Debug\System.Net.Http.Formatting.xml
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Common\bin\Debug\System.Web.Http.xml
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Common\bin\Debug\System.Web.Http.WebHost.xml
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Common\bin\Debug\AutoMapper.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Common\bin\Debug\AutoMapper.xml

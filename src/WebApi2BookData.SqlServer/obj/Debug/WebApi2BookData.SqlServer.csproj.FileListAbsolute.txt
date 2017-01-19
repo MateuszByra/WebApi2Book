@@ -21,3 +21,5 @@ E:\Projekty\Moje\WebApi2Book\src\WebApi2BookData.SqlServer\bin\Debug\Ninject.dll
 E:\Projekty\Moje\WebApi2Book\src\WebApi2BookData.SqlServer\bin\Debug\log4net.dll
 E:\Projekty\Moje\WebApi2Book\src\WebApi2BookData.SqlServer\bin\Debug\Ninject.xml
 E:\Projekty\Moje\WebApi2Book\src\WebApi2BookData.SqlServer\bin\Debug\log4net.xml
+E:\Projekty\Moje\WebApi2Book\src\WebApi2BookData.SqlServer\bin\Debug\AutoMapper.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2BookData.SqlServer\bin\Debug\AutoMapper.xml

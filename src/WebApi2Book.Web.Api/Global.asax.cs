@@ -13,13 +13,17 @@ namespace WebApi2Book.Web.Api
     {
         protected void Application_Start()
         {
+            GlobalConfiguration.Configure(WebApiConfig.Register);
+        }
+
+        protected void Application_Error()
+        {
             var exception = Server.GetLastError();
-            if(exception != null)
+            if (exception != null)
             {
                 var log = WebContainerManager.Get<ILogManager>().GetLog(typeof(WebApiApplication));
                 log.Error("Unhandled exception", exception);
             }
-            GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
 }
