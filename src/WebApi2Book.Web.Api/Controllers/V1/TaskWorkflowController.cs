@@ -19,16 +19,19 @@ namespace WebApi2Book.Web.Api.Controllers.V1
     {
         private readonly IStartTaskWorkflowProcessor _startTaskWorkflowProcessor;
         private readonly ICompleteTaskWorkflowProcessor _completeTaskWorkflowProcessor;
+        private readonly IReactivateTaskWorkflowProcessor _reactivateTaskWorkflowProcessor;
 
         public TaskWorkflowController(IStartTaskWorkflowProcessor startTaskWorkflowProcessor,
-            ICompleteTaskWorkflowProcessor completeTaskWorkflowProcessor)
+            ICompleteTaskWorkflowProcessor completeTaskWorkflowProcessor,
+            IReactivateTaskWorkflowProcessor reactivateTaskWorkflowProcessor)
         {
             _startTaskWorkflowProcessor = startTaskWorkflowProcessor;
             _completeTaskWorkflowProcessor = completeTaskWorkflowProcessor;
+            _reactivateTaskWorkflowProcessor = reactivateTaskWorkflowProcessor;
         }
 
         [HttpPost]
-        [Route("tasks/{taskId:long}/activations", Name ="StartTaskRoute")]
+        [Route("tasks/{taskId:long}/activations", Name = "StartTaskRoute")]
         public Task StartTask(long taskId)
         {
             var task = _startTaskWorkflowProcessor.StartTask(taskId);
@@ -36,10 +39,18 @@ namespace WebApi2Book.Web.Api.Controllers.V1
         }
 
         [HttpPost]
-        [Route("tasks/{taskId:long}/completions", Name ="CompleteTaskRoute")]
+        [Route("tasks/{taskId:long}/completions", Name = "CompleteTaskRoute")]
         public Task CompleteTask(long taskId)
         {
             var task = _completeTaskWorkflowProcessor.CompleteTask(taskId);
+            return task;
+        }
+
+        [HttpPost]
+        [Route("tasks/{taskId:long}/reactivations", Name = "ReactivateTaskRoute")]
+        public Task ReactivateTask(long taskId)
+        {
+            var task = _reactivateTaskWorkflowProcessor.ReactivateTask(taskId);
             return task;
         }
     }
