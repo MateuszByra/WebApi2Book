@@ -14,21 +14,32 @@ namespace WebApi2Book.Web.Api.Controllers.V1
 {
     [ApiVersion1RoutePrefix("")]
     [UnitOfWorkActionFilter]
+    [Authorize(Roles = Constants.RoleNames.SeniorWorker)]
     public class TaskWorkflowController : ApiController
     {
         private readonly IStartTaskWorkflowProcessor _startTaskWorkflowProcessor;
+        private readonly ICompleteTaskWorkflowProcessor _completeTaskWorkflowProcessor;
 
-        public TaskWorkflowController(IStartTaskWorkflowProcessor startTaskWorkflowProcessor)
+        public TaskWorkflowController(IStartTaskWorkflowProcessor startTaskWorkflowProcessor,
+            ICompleteTaskWorkflowProcessor completeTaskWorkflowProcessor)
         {
             _startTaskWorkflowProcessor = startTaskWorkflowProcessor;
+            _completeTaskWorkflowProcessor = completeTaskWorkflowProcessor;
         }
 
         [HttpPost]
         [Route("tasks/{taskId:long}/activations", Name ="StartTaskRoute")]
-        [Authorize(Roles =Constants.RoleNames.SeniorWorker)]
         public Task StartTask(long taskId)
         {
             var task = _startTaskWorkflowProcessor.StartTask(taskId);
+            return task;
+        }
+
+        [HttpPost]
+        [Route("tasks/{taksId:long}/completions", Name ="CompleteTaskRoute")]
+        public Task CompleteTask(long taskId)
+        {
+            var task = _completeTaskWorkflowProcessor.CompleteTask(taskId);
             return task;
         }
     }
