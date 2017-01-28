@@ -1,5 +1,6 @@
 ﻿using System.Net.Http;
 using System.Web.Http;
+using WebApi2Book.Common;
 using WebApi2Book.Web.Api.MaintenanceProcessing;
 using WebApi2Book.Web.Api.Models;
 using WebApi2Book.Web.Common;
@@ -19,6 +20,7 @@ namespace WebApi2Book.Web.Api.Controllers.V1
         }
 
         [Route("", Name ="AddTaskRoute")]
+        [Authorize(Roles =Constants.RoleNames.Manager)]
         [HttpPost]
         public IHttpActionResult AddTask(HttpRequestMessage requestMessage, NewTask newTask)
         {
