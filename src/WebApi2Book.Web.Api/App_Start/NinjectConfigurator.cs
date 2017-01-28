@@ -43,6 +43,7 @@ namespace WebApi2Book.Web.Api
             container.Bind<IBasicSecurityService>().To<BasicSecurityService>().InSingletonScope();
             container.Bind<ITaskByIdQueryProcessor>().To<TaskByIdQueryProcessor>().InRequestScope();
             container.Bind<IUpdateTaskStatusQueryProcessor>().To<UpdateTaskStatusQueryProcessor>().InRequestScope();
+            container.Bind<IStartTaskWorkflowProcessor>().To<StartTaskWorkflowProcessor>().InRequestScope();
         }
 
         private void ConfigureLog4net(IKernel container)

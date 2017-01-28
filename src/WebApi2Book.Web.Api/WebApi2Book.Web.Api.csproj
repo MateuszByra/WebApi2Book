@@ -225,7 +225,9 @@
     </Compile>
     <Compile Include="MaintenanceProcessing\AddTaskMaintenanceProcessor.cs" />
     <Compile Include="MaintenanceProcessing\IAddTaskMaintenanceProcessor.cs" />
+    <Compile Include="MaintenanceProcessing\IStartTaskWorkflowProcessor.cs" />
     <Compile Include="MaintenanceProcessing\LocationLinkCalculator.cs" />
+    <Compile Include="MaintenanceProcessing\StartTaskWorkflowProcessor.cs" />
     <Compile Include="MaintenanceProcessing\TaskCreatedActionResult.cs" />
     <Compile Include="Models\NewTask.cs" />
     <Compile Include="Models\NewTaskV2.cs" />
