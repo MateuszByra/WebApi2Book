@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using WebApi2Book.Common;
+using WebApi2Book.Data.Exceptions;
 using WebApi2Book.Data.QueryProcessors;
 using WebApi2Book.Web.Api.Models;
 
@@ -31,6 +32,11 @@ namespace WebApi2Book.Web.Api.MaintenanceProcessing
             var taskEntity = _taskByIdQueryProcessor.GetTask(taskId);
 
             if (taskEntity == null)
+            {
+                throw new RootObjectNotFoundException("Task not found");
+            }
+            //simulate some workflow logic
+            if(taskEntity.Status.Name != "In Progress")
             {
                 throw new BusinessRuleViolationException("Incorrect task status. Expected status of 'In Progress'.");
             }

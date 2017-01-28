@@ -36,7 +36,7 @@ namespace WebApi2Book.Web.Api.Controllers.V1
         }
 
         [HttpPost]
-        [Route("tasks/{taksId:long}/completions", Name ="CompleteTaskRoute")]
+        [Route("tasks/{taskId:long}/completions", Name ="CompleteTaskRoute")]
         public Task CompleteTask(long taskId)
         {
             var task = _completeTaskWorkflowProcessor.CompleteTask(taskId);
