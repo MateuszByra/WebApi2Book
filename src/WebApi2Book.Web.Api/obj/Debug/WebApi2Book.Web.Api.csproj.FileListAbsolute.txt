@@ -85,3 +85,6 @@ E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.Web.WebPages.Dep
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.Web.WebPages.Razor.xml
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.Web.Http.Tracing.dll
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.Web.Http.Tracing.xml
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api\bin\JwtAuthForWebAPI.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.IdentityModel.Tokens.Jwt.dll
+E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Web.Api\bin\System.IdentityModel.Tokens.Jwt.xml

@@ -1,0 +1,11 @@
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\bin\Debug\CreateJwt.exe.config
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\bin\Debug\CreateJwt.exe
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\bin\Debug\CreateJwt.pdb
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\bin\Debug\JwtAuthForWebAPI.dll
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\bin\Debug\log4net.dll
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\bin\Debug\log4net.xml
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\obj\Debug\CreateJwt.csprojResolveAssemblyReference.cache
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\obj\Debug\CreateJwt.exe
+E:\Projekty\Moje\WebApi2Book\src\CreateJwt\obj\Debug\CreateJwt.pdb
