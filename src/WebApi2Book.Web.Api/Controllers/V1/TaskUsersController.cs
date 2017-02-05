@@ -32,7 +32,7 @@ namespace WebApi2Book.Web.Api.Controllers.V1
             return task;
         }
 
-        [Route("{taksId:long}/users",Name ="DeleteTaskUsersRoute")]
+        [Route("{taskId:long}/users",Name ="DeleteTaskUsersRoute")]
         [HttpDelete]
         public Task DeleteTaskUsers(long taskId)
         {

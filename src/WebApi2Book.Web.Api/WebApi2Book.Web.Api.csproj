@@ -243,11 +243,13 @@
     <Compile Include="MaintenanceProcessing\IReactivateTaskWorkflowProcessor.cs" />
     <Compile Include="MaintenanceProcessing\IStartTaskWorkflowProcessor.cs" />
     <Compile Include="MaintenanceProcessing\ITaskUsersMaintenanceProcessor.cs" />
+    <Compile Include="MaintenanceProcessing\IUpdateTaskMaintenanceProcessor.cs" />
     <Compile Include="MaintenanceProcessing\LocationLinkCalculator.cs" />
     <Compile Include="MaintenanceProcessing\ReactivateTaskWorkflowProcessor.cs" />
     <Compile Include="MaintenanceProcessing\StartTaskWorkflowProcessor.cs" />
     <Compile Include="MaintenanceProcessing\TaskCreatedActionResult.cs" />
     <Compile Include="MaintenanceProcessing\TaskUserMaintenanceProcessor.cs" />
+    <Compile Include="MaintenanceProcessing\UpdateTaskMaintenanceProcessor.cs" />
     <Compile Include="Models\NewTask.cs" />
     <Compile Include="Models\NewTaskV2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
