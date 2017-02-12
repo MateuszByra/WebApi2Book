@@ -250,6 +250,7 @@
     <Compile Include="MaintenanceProcessing\TaskCreatedActionResult.cs" />
     <Compile Include="MaintenanceProcessing\TaskUserMaintenanceProcessor.cs" />
     <Compile Include="MaintenanceProcessing\UpdateTaskMaintenanceProcessor.cs" />
+    <Compile Include="MaintenanceProcessing\ValidateTaskUpdateRequestAttribute.cs" />
     <Compile Include="Models\NewTask.cs" />
     <Compile Include="Models\NewTaskV2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

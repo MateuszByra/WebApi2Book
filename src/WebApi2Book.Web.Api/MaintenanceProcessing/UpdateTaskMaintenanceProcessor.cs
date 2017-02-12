@@ -5,6 +5,7 @@ using WebApi2Book.Data.QueryProcessors;
 using WebApi2Book.Web.Api.Models;
 using WebApi2Book.Web.Common;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace WebApi2Book.Web.Api.MaintenanceProcessing
 {
