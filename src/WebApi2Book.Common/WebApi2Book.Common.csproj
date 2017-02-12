@@ -74,12 +74,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WebApi2Book.Data\WebApi2Book.Data.csproj">
-      <Project>{CE5E3EFE-8ECA-4068-9BF3-7DD1F4EB7D39}</Project>
-      <Name>WebApi2Book.Data</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

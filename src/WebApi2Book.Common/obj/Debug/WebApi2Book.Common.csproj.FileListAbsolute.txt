@@ -11,5 +11,3 @@ E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\System.Web.Http.dl
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\System.Web.Http.xml
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\Ninject.dll
 E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\Ninject.xml
-E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\WebApi2Book.Data.dll
-E:\Projekty\Moje\WebApi2Book\src\WebApi2Book.Common\bin\Debug\WebApi2Book.Data.pdb

@@ -49,9 +49,18 @@
     <Compile Include="PagedDataRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryProcessors\IAddTaskQueryProcessor.cs" />
+    <Compile Include="QueryProcessors\IAllTasksQueryProcessor.cs" />
     <Compile Include="QueryProcessors\ITaskByIdQueryProcessor.cs" />
     <Compile Include="QueryProcessors\IUpdateTaskQueryProcessor.cs" />
     <Compile Include="QueryProcessors\IUpdateTaskStatusQueryProcessor.cs" />
+    <Compile Include="QueryResult.cs" />
+    <Compile Include="ResultsPagingUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApi2Book.Common\WebApi2Book.Common.csproj">
+      <Project>{7e26ac91-59c4-4e3e-aa13-5e25c26957ef}</Project>
+      <Name>WebApi2Book.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
