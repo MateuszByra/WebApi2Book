@@ -58,11 +58,13 @@
     <Compile Include="BusinessRuleViolationException.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="DateTimeAdapter.cs" />
+    <Compile Include="Extensions\IntExtensions.cs" />
     <Compile Include="IDateTime.cs" />
     <Compile Include="Logging\ILogManager.cs" />
     <Compile Include="Logging\LogManagerAdapter.cs" />
     <Compile Include="NamespaceHttpControllerSelector.cs" />
     <Compile Include="NinjectDependencyResolver.cs" />
+    <Compile Include="PrimitiveTypeParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\IUserSession.cs" />
     <Compile Include="TypeMapping\AutoMapperAdapter.cs" />

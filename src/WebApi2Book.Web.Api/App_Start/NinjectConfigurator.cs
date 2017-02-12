@@ -52,6 +52,7 @@ namespace WebApi2Book.Web.Api
             container.Bind<ITaskUsersMaintenanceProcessor>().To<TaskUserMaintenanceProcessor>().InRequestScope();
             container.Bind<IUpdateablePropertyDetector>().To<JObjectUpdateablePropertyDetector>().InSingletonScope();
             container.Bind<IUpdateTaskMaintenanceProcessor>().To<UpdateTaskMaintenanceProcessor>().InRequestScope();
+            container.Bind<IPagedDataRequestFactory>().To<PagedDataRequestFactory>().InSingletonScope();
         }
 
         private void ConfigureLog4net(IKernel container)
