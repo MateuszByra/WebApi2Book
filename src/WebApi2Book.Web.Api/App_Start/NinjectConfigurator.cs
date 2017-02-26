@@ -23,6 +23,8 @@ using WebApi2Book.Web.Api.MaintenanceProcessing;
 using WebApi2Book.Web.Api.Security;
 using WebApi2Book.Web.Api.InquiryProcessing;
 using WebApi2Book.Web.Api.LinkServices;
+using WebApi2Book.Web.Api.LegacyProcessing;
+using WebApi2Book.Web.Api.LegacyProcessing.ProcessingStrategies;
 
 namespace WebApi2Book.Web.Api
 {
@@ -38,6 +40,7 @@ namespace WebApi2Book.Web.Api
             ConfigureLog4net(container);
             ConfigureUserSession(container);
             ConfigureNHibernate(container);
+            ConfigureDependenciesOnlyUsedForLegacyProcessing(container);
             ConfigureAutoMapper(container);
             container.Bind<IDateTime>().To<DateTimeAdapter>().InSingletonScope();
             container.Bind<IAddTaskQueryProcessor>().To<AddTaskQueryProcessor>().InRequestScope();
@@ -59,6 +62,17 @@ namespace WebApi2Book.Web.Api
             container.Bind<ICommonLinkService>().To<CommonLinkService>().InRequestScope();
             container.Bind<IUserLinkService>().To<UserLinkService>().InRequestScope();
             container.Bind<ITaskLinkService>().To<TaskLinkService>().InRequestScope();
+        }
+
+        private void ConfigureDependenciesOnlyUsedForLegacyProcessing(IKernel container)
+        {
+            container.Bind<ILegacyMessageProcessor>().To<LegacyMessageProcessor>().InRequestScope();
+            container.Bind<ILegacyMessageParser>().To<LegacyMessageParser>().InSingletonScope();
+            container.Bind<ILegacyMessageTypeFormatter>().To<LegacyMessageTypeFormatter>().InSingletonScope();
+
+            container.Bind<ILegacyMessageProcessingStrategy>()
+                .To<GetTasksMessageProcessingStrategy>()
+                .InRequestScope();
         }
 
         private void ConfigureLog4net(IKernel container)
